@@ -1,0 +1,17 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell($r=\"C:\\\\Users\\\\HomePC\\\\Documents\\\\work\\\\toke-s-portfolio\"; Get-Content \"$r\\\\AGENTS.md\"; Get-ChildItem \"$r\\\\src\",\"$r\\\\public\" -Recurse -File | ForEach-Object FullName; Get-Content \"$r\\\\src\\\\app\\\\globals.css\"; Get-Content \"$r\\\\src\\\\app\\\\layout.tsx\"; Get-Content \"$r\\\\next.config.ts\"; Get-ChildItem \"$r\\\\node_modules\\\\next\\\\dist\\\\docs\" -ErrorAction SilentlyContinue | Select-Object -First 20 Name)",
+      "PowerShell(npx --yes shadcn@latest init -d -y 2>&1)",
+      "PowerShell(npx --yes shadcn@latest add button card badge input textarea label separator sonner tabs sheet tooltip -y 2>&1)",
+      "PowerShell(npm i nodemailer zod motion 2>&1)",
+      "PowerShell(npm i -D @types/nodemailer 2>&1)",
+      "PowerShell($r=\"C:\\\\Users\\\\HomePC\\\\Documents\\\\work\\\\toke-s-portfolio\"; Get-ChildItem \"$r\\\\src\\\\components\\\\ui\" | ForEach-Object Name; Get-Content \"$r\\\\src\\\\app\\\\globals.css\"; Get-Content \"$r\\\\src\\\\app\\\\layout.tsx\"; Get-Content \"$r\\\\components.json\"; Get-Content \"$r\\\\src\\\\components\\\\ui\\\\button.tsx\"; Get-Content \"$r\\\\src\\\\components\\\\ui\\\\sonner.tsx\")",
+      "PowerShell($r=\"C:\\\\Users\\\\HomePC\\\\Documents\\\\work\\\\toke-s-portfolio\"; Get-Content \"$r\\\\package.json\"; Test-Path \"$r\\\\node_modules\\\\cn\\\\package.json\"; if \\(Test-Path \"$r\\\\node_modules\\\\cn\\\\package.json\"\\) { Get-Content \"$r\\\\node_modules\\\\cn\\\\package.json\" | Select-Object -First 15 })",
+      "PowerShell($f=\"C:\\\\Users\\\\HomePC\\\\Documents\\\\work\\\\toke-s-portfolio\\\\src\\\\components\\\\ui\\\\sonner.tsx\"; $c=Get-Content $f -Raw; $c=$c.Replace\\(\"import { useTheme } from `\"next-themes`\"`n\",\"\"\\).Replace\\(\"  const { theme = `\"system`\" } = useTheme\\(\\)`n`n\",\"\"\\).Replace\\(\"theme={theme as ToasterProps[`\"theme`\"]}\",\"theme=`\"light`\"\"\\); Set-Content $f $c -NoNewline -Encoding utf8; Select-String -Path $f -Pattern \"theme\")",
+      "PowerShell(npx tsc --noEmit 2>&1)",
+      "PowerShell(npm run build 2>&1)",
+      "PowerShell(npm run lint 2>&1)"
+    ]
+  }
+}
