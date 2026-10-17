@@ -17,7 +17,10 @@
       "Bash(rm -f /c/Users/HomePC/AppData/Local/Temp/claude/c--Users-HomePC-Documents-work-toke-s-portfolio/09e5ec29-3469-4266-a10c-32320cf36f4a/scratchpad/s[dm]-*.png /c/Users/HomePC/AppData/Local/Temp/claude/c--Users-HomePC-Documents-work-toke-s-portfolio/09e5ec29-3469-4266-a10c-32320cf36f4a/scratchpad/[dm]-*.png)",
       "PowerShell(Get-NetTCPConnection -LocalPort 3100 -State Listen -ErrorAction SilentlyContinue | ForEach-Object { Stop-Process -Id $_.OwningProcess -Force -Confirm:$false }; npm run build 2>&1 | Select-String \"Compiled|rror|Generating static pages using 6 workers \\\\\\(5\")",
       "Bash(node --env-file=.env.local -e ' *)",
-      "PowerShell(Get-NetTCPConnection -LocalPort 3100 -State Listen -ErrorAction SilentlyContinue | ForEach-Object { Stop-Process -Id $_.OwningProcess -Force -Confirm:$false }; npx tsc --noEmit; if \\($?\\) { \"types OK\" }; npm run lint 2>&1 | Select-Object -Last 3; git status --short)"
+      "PowerShell(Get-NetTCPConnection -LocalPort 3100 -State Listen -ErrorAction SilentlyContinue | ForEach-Object { Stop-Process -Id $_.OwningProcess -Force -Confirm:$false }; npx tsc --noEmit; if \\($?\\) { \"types OK\" }; npm run lint 2>&1 | Select-Object -Last 3; git status --short)",
+      "mcp__claude_ai_Vercel__get_deployment",
+      "PowerShell(npx --yes vercel@latest whoami 2>&1)",
+      "PowerShell(npx --yes vercel@latest inspect adedoyin-portfolio-3j3xxm2ax-adedara-samuels-projects.vercel.app --scope adedara-samuels-projects 2>&1)"
     ]
   }
 }
