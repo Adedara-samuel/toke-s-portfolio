@@ -102,7 +102,7 @@ export async function POST(request: Request) {
   <div style="font-family:Georgia,serif;background:#fbf8f3;padding:32px">
     <div style="max-width:600px;margin:0 auto;background:#ffffff;border:1px solid #ece4d8;border-radius:16px;overflow:hidden">
       <div style="padding:24px 28px;border-bottom:1px solid #ece4d8">
-        <p style="margin:0;font:600 11px/1 Arial,sans-serif;letter-spacing:2px;text-transform:uppercase;color:#a8432a">New portfolio enquiry</p>
+        <p style="margin:0;font:600 11px/1 Arial,sans-serif;letter-spacing:2px;text-transform:uppercase;color:#a8432a">New message from your portfolio website</p>
         <h1 style="margin:10px 0 0;font-size:22px;color:#2a211c">${escapeHtml(subject)}</h1>
       </div>
       <table style="width:100%;border-collapse:collapse;font:14px/1.5 Arial,sans-serif;color:#2a211c">
@@ -118,14 +118,14 @@ export async function POST(request: Request) {
     <p style="text-align:center;font:12px Arial,sans-serif;color:#9a8d83;margin-top:16px">Reply to this email to answer ${escapeHtml(name)} directly.</p>
   </div>`
 
-  const text = `${rows.map(([l, v]) => `${l}: ${v}`).join("\n")}\n\n${message}`
+  const text = `New message from your portfolio website\n\n${rows.map(([l, v]) => `${l}: ${v}`).join("\n")}\n\n${message}`
 
   try {
     await mailer.sendMail({
-      from: `"${oneLine(profile.name)} · Portfolio" <${from}>`,
+      from: `"${oneLine(profile.name)} · Portfolio Website" <${from}>`,
       to,
       replyTo: { name: oneLine(name), address: email },
-      subject: oneLine(`Portfolio enquiry: ${subject}`),
+      subject: oneLine(`[Portfolio] New message from ${name}: ${subject}`),
       text,
       html,
     })
