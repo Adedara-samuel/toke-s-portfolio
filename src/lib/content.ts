@@ -14,6 +14,7 @@ export const profile = {
     "Marketing & Advertising",
     "Public Relations",
     "Story Writer",
+    "News Writer",
     "Mass Communication",
   ],
   summary:
@@ -83,7 +84,7 @@ export const experience: Experience[] = [
     category: "media",
     points: [
       "Presented and hosted Corpers Chronicles on Dove Television.",
-      "Researched, wrote and reported news stories for television and digital audiences.",
+      "Researched and wrote news stories in the newsroom, and reported them for television and digital audiences.",
       "Applied accurate, ethical reporting standards to deliver timely, audience-focused coverage.",
     ],
   },
@@ -100,13 +101,13 @@ export const experience: Experience[] = [
   },
   {
     role: "Customer Relationship Management Specialist",
-    organisation: "Powress Picture Limited",
+    organisation: "Prowoss Picture Limited",
     location: "Nigeria",
     period: "Feb 2025 – May 2025",
     category: "marketing",
     points: [
       "Managed client relationships through CRM strategies, improving customer satisfaction and retention.",
-      "Analysed customer data to tailor marketing campaigns, achieving a 15% increase in engagement.",
+      "Analysed customer data to tailor marketing campaigns.",
       "Worked with marketing teams to develop targeted content for social media and email campaigns.",
     ],
   },
@@ -118,7 +119,7 @@ export const experience: Experience[] = [
     category: "content",
     points: [
       "Created written and visual content for ministry publications and social media, enhancing audience engagement.",
-      "Developed content strategies to promote ministry events, increasing attendance by 20% through targeted campaigns.",
+      "Developed content strategies to promote ministry events through targeted campaigns.",
       "Edited and curated content to keep it consistent with organisational values.",
     ],
   },
@@ -131,7 +132,7 @@ export const experience: Experience[] = [
     points: [
       "Wrote editorial content for organisational publications, reaching over 1,000 readers monthly.",
       "Built content calendars and managed publication schedules, ensuring timely delivery of quality materials.",
-      "Refined messaging with the team, boosting engagement by 30% across digital platforms.",
+      "Refined messaging with the team across digital platforms.",
     ],
   },
   {
@@ -142,7 +143,7 @@ export const experience: Experience[] = [
     category: "media",
     points: [
       "Hosted radio segments reaching thousands of listeners weekly.",
-      "Wrote promotional content for radio campaigns, raising listener engagement by 10%.",
+      "Wrote promotional content for radio campaigns.",
       "Worked with production teams on creative scripts and advertisements.",
     ],
   },
@@ -153,8 +154,8 @@ export const experience: Experience[] = [
     period: "Jul 2022",
     category: "marketing",
     points: [
-      "Led content creation and marketing campaigns, increasing brand visibility by 25% within one month.",
-      "Planned and ran social media strategies, growing the follower base by 500+ across platforms.",
+      "Led content creation and marketing campaigns to strengthen brand visibility.",
+      "Planned and ran social media strategies across platforms.",
       "Managed a team of content creators, keeping messaging and campaigns aligned.",
     ],
   },
@@ -173,19 +174,50 @@ export const experience: Experience[] = [
 ]
 
 export const impact = [
-  { value: "30%", label: "Engagement lift across digital platforms", source: "RCF, Ekiti Zone" },
-  { value: "25%", label: "Brand visibility growth within one month", source: "AMCOMS" },
-  { value: "20%", label: "Increase in event attendance", source: "Christ the Redeemer's Ministry" },
-  { value: "15%", label: "Increase in campaign engagement", source: "Powress Picture Limited" },
-  { value: "10%", label: "Rise in listener engagement", source: "Hebron FM" },
-  { value: "500+", label: "New followers across platforms", source: "AMCOMS" },
+  {
+    value: "Editorial",
+    label: "Created content and managed publication schedules",
+    source: "RCF, Ekiti Zone",
+  },
+  {
+    value: "Campaigns",
+    label: "Led content creation and social media strategy",
+    source: "AMCOMS",
+  },
+  {
+    value: "Events",
+    label: "Promoted ministry events through written and visual content",
+    source: "Christ the Redeemer's Ministry",
+  },
+  {
+    value: "Research",
+    label: "Used customer insights to tailor marketing campaigns",
+    source: "Prowoss Picture Limited",
+  },
+  {
+    value: "Radio",
+    label: "Wrote promotional content and creative scripts",
+    source: "Hebron FM",
+  },
+  {
+    value: "Community",
+    label: "Organised events and coordinated media outreach",
+    source: "Federation of Ikole Local Government Students Union",
+  },
 ] as const
 
 export const skills = [
   {
     area: "Content & Storytelling",
     icon: "pen",
-    items: ["Content writing", "Editorial writing", "Short stories and quotes", "Copywriting", "Digital storytelling"],
+    items: [
+      "Content writing",
+      "Story writing",
+      "Editorial writing",
+      "News writing",
+      "Copywriting",
+      "Digital storytelling",
+    ],
   },
   {
     area: "Marketing & Advertising",

@@ -70,6 +70,22 @@
   html {
     @apply scroll-smooth font-sans;
     scroll-padding-top: 5rem;
+    scrollbar-color: var(--brand) var(--paper);
+    scrollbar-width: thin;
+  }
+  html::-webkit-scrollbar {
+    width: 0.75rem;
+  }
+  html::-webkit-scrollbar-track {
+    background: var(--paper);
+  }
+  html::-webkit-scrollbar-thumb {
+    border: 3px solid var(--paper);
+    border-radius: 999px;
+    background: color-mix(in oklch, var(--brand) 55%, var(--background));
+  }
+  html::-webkit-scrollbar-thumb:hover {
+    background: var(--brand);
   }
   body {
     @apply bg-background text-foreground;

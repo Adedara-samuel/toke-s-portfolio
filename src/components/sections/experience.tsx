@@ -12,7 +12,7 @@ import {
   type ExperienceCategory,
 } from "@/lib/content"
 
-// Wrap figures like "30%", "1,000" or "500+" so they stand out in the bullet text.
+// Wrap numeric values so they stand out in the bullet text.
 function emphasiseFigures(text: string) {
   const parts = text.split(/(\d[\d,]*%?\+?)/g)
   return parts.map((part, i) =>

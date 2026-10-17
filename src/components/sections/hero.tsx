@@ -89,7 +89,8 @@ export function Hero() {
               Now on Dove TV
             </div>
             <p className="mt-2 text-sm leading-snug">
-              Presenting &amp; hosting <span className="font-heading italic">Corpers Chronicles</span>
+              Writing and reporting news in the newsroom, and presenting &amp; hosting{" "}
+              <span className="font-heading italic">Corpers Chronicles</span>
             </p>
           </div>
         </Reveal>

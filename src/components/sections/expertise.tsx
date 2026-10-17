@@ -63,9 +63,9 @@ export function Expertise() {
 
         <div className="mt-24">
           <Reveal>
-            <p className="eyebrow">Measured impact</p>
+            <p className="eyebrow">Selected work</p>
             <h3 className="mt-5 font-heading text-3xl tracking-tight sm:text-4xl">
-              Results from the work so far
+              Work across writing, campaigns and media
             </h3>
           </Reveal>
           <div className="mt-10 grid gap-px overflow-hidden rounded-2xl border bg-border sm:grid-cols-2 lg:grid-cols-3">
