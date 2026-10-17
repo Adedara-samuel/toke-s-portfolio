@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     title: `${profile.name} | Content Writer, PR & Media`,
     description,
     type: "profile",
-    images: ["/hero-picture.jpg"],
+    images: ["/portrait.jpg"],
   },
 }
 

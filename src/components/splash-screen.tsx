@@ -127,12 +127,12 @@ export function SplashScreen() {
                 </svg>
                 <div className="absolute inset-[10px] overflow-hidden rounded-full bg-muted">
                   <Image
-                    src="/hero-picture.jpg"
+                    src="/portrait.jpg"
                     alt=""
                     fill
                     priority
                     sizes="144px"
-                    className="object-cover"
+                    className="origin-[52%_39%] scale-[1.8] object-cover object-[50%_28%]"
                   />
                 </div>
               </motion.div>
@@ -155,7 +155,7 @@ export function SplashScreen() {
                 What I do · {String(lineIndex + 1).padStart(2, "0")} / {String(count).padStart(2, "0")}
               </motion.p>
 
-              <div className="relative mt-3 h-[3.6rem] w-full overflow-hidden sm:h-[5.5rem] md:h-[6.5rem]">
+              <div className="relative mt-3 h-25 w-full overflow-hidden sm:h-22 md:h-26">
                 <AnimatePresence mode="popLayout" initial={false}>
                   <motion.p
                     key={splashLines[lineIndex]}
@@ -163,7 +163,7 @@ export function SplashScreen() {
                     animate={{ y: 0, opacity: 1, filter: "blur(0px)" }}
                     exit={reduceMotion ? { opacity: 0 } : { y: "-100%", opacity: 0, filter: "blur(6px)" }}
                     transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
-                    className="absolute inset-x-0 font-heading text-[2.6rem] leading-[1.25] tracking-tight italic sm:text-7xl md:text-[5.25rem]"
+                    className="absolute inset-0 flex items-center justify-center font-heading text-[2.6rem] leading-[1.15] tracking-tight text-balance italic sm:text-7xl sm:leading-tight md:text-[5.25rem]"
                   >
                     {splashLines[lineIndex]}
                   </motion.p>

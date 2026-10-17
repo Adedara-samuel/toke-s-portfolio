@@ -19,15 +19,15 @@ export function About() {
             <figure className="mt-10">
               <div className="relative aspect-4/5 overflow-hidden rounded-3xl bg-muted">
                 <Image
-                  src="/about-img.jpg"
-                  alt="Adedoyin Favour Adebayo seated behind a studio microphone"
+                  src="/about-portrait.jpg"
+                  alt="Adedoyin Favour Adebayo smiling at her desk in an office"
                   fill
                   sizes="(min-width: 1024px) 400px, 90vw"
-                  className="object-cover"
+                  className="object-cover object-[50%_35%]"
                 />
               </div>
               <figcaption className="mt-3 text-sm text-muted-foreground">
-                Behind the microphone: presenting is part of the craft.
+                At the desk, where the stories take shape.
               </figcaption>
             </figure>
           </Reveal>
