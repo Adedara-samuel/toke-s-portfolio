@@ -11,7 +11,8 @@
       "PowerShell($f=\"C:\\\\Users\\\\HomePC\\\\Documents\\\\work\\\\toke-s-portfolio\\\\src\\\\components\\\\ui\\\\sonner.tsx\"; $c=Get-Content $f -Raw; $c=$c.Replace\\(\"import { useTheme } from `\"next-themes`\"`n\",\"\"\\).Replace\\(\"  const { theme = `\"system`\" } = useTheme\\(\\)`n`n\",\"\"\\).Replace\\(\"theme={theme as ToasterProps[`\"theme`\"]}\",\"theme=`\"light`\"\"\\); Set-Content $f $c -NoNewline -Encoding utf8; Select-String -Path $f -Pattern \"theme\")",
       "PowerShell(npx tsc --noEmit 2>&1)",
       "PowerShell(npm run build 2>&1)",
-      "PowerShell(npm run lint 2>&1)"
+      "PowerShell(npm run lint 2>&1)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:3100/)"
     ]
   }
 }
