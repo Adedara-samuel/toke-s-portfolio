@@ -36,7 +36,7 @@ export function About() {
         <article className="article">
           <Reveal>
             <p className="dropcap">
-              I&apos;m Adedoyin Favour Adebayo, a graduate of Communications and Media Studies (Mass
+              My name is Adedoyin Favour Adebayo. I&apos;m a graduate of Communications and Media Studies (Mass
               Communication) from Bamidele Olumilua University of Education, Science and Technology,
               Ikere-Ekiti, with over three years of experience across content writing, marketing,
               advertising, public relations and social media management.

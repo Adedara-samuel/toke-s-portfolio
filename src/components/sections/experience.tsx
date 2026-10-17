@@ -33,7 +33,7 @@ export function Experience() {
   return (
     <section id="experience" className="py-24 sm:py-32">
       <div className="mx-auto max-w-6xl px-5 sm:px-8">
-        <div className="flex flex-col justify-between gap-8 lg:flex-row lg:items-end">
+        <div className="flex flex-col gap-8">
           <Reveal>
             <p className="eyebrow">Experience</p>
             <h2 className="mt-5 max-w-xl font-heading text-4xl leading-tight tracking-tight sm:text-5xl">
@@ -46,7 +46,7 @@ export function Experience() {
               value={filter}
               onValueChange={(value) => setFilter(value as ExperienceCategory | "all")}
             >
-              <TabsList className="h-auto! w-full flex-wrap justify-start gap-1 rounded-2xl bg-secondary p-1 sm:w-fit sm:rounded-full">
+              <TabsList className="h-auto! w-full flex-wrap justify-start gap-1 rounded-2xl bg-secondary p-1 sm:w-fit sm:flex-nowrap sm:rounded-full">
                 {experienceCategories.map((category) => (
                   <TabsTrigger
                     key={category.value}

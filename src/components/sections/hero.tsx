@@ -14,7 +14,7 @@ export function Hero() {
       <div className="relative mx-auto grid max-w-6xl items-center gap-14 px-5 sm:px-8 lg:grid-cols-[1.15fr_0.85fr]">
         <div>
           <Reveal>
-            <p className="eyebrow">Content Writer Â· Public Relations Â· Media</p>
+            <p className="eyebrow">Content Writer · Public Relations · Media</p>
           </Reveal>
 
           <Reveal delay={0.05}>
