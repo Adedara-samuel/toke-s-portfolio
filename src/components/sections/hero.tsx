@@ -1,5 +1,5 @@
 import Image from "next/image"
-import { ArrowDownToLine, ArrowUpRight, GraduationCap } from "lucide-react"
+import { ArrowDownToLine, ArrowUpRight } from "lucide-react"
 import { buttonVariants } from "@/components/ui/button"
 import { Reveal } from "@/components/reveal"
 import { cn } from "@/lib/utils"
@@ -91,16 +91,6 @@ export function Hero() {
             <p className="mt-2 text-sm leading-snug">
               Presenting &amp; hosting <span className="font-heading italic">Corpers Chronicles</span>
             </p>
-          </div>
-
-          <div className="absolute top-8 -right-3 hidden items-center gap-3 rounded-2xl border bg-card/95 p-3 pr-4 shadow-lg backdrop-blur sm:flex lg:-right-8">
-            <span className="grid size-9 place-items-center rounded-full bg-brand-soft text-brand">
-              <GraduationCap className="size-4" />
-            </span>
-            <div className="text-sm leading-tight">
-              <p className="font-medium">BSc Mass Communication</p>
-              <p className="text-muted-foreground">Class of 2024</p>
-            </div>
           </div>
         </Reveal>
       </div>
