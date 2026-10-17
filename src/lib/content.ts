@@ -67,10 +67,10 @@ export type Experience = {
 }
 
 export const experienceCategories: { value: ExperienceCategory | "all"; label: string }[] = [
-  { value: "all", label: "All roles" },
+  { value: "all", label: "All" },
   { value: "media", label: "Broadcast & Media" },
   { value: "content", label: "Content & Editorial" },
-  { value: "marketing", label: "Marketing, CRM & PR" },
+  { value: "marketing", label: "Marketing & PR" },
 ]
 
 export const experience: Experience[] = [

@@ -41,17 +41,17 @@ export function Experience() {
             </h2>
           </Reveal>
 
-          <Reveal delay={0.05} className="-mx-5 overflow-x-auto px-5 sm:mx-0 sm:px-0">
+          <Reveal delay={0.05}>
             <Tabs
               value={filter}
               onValueChange={(value) => setFilter(value as ExperienceCategory | "all")}
             >
-              <TabsList className="h-11! rounded-full bg-secondary p-1">
+              <TabsList className="h-auto! w-full flex-wrap justify-start gap-1 rounded-2xl bg-secondary p-1 sm:w-fit sm:rounded-full">
                 {experienceCategories.map((category) => (
                   <TabsTrigger
                     key={category.value}
                     value={category.value}
-                    className="rounded-full px-4 text-[0.82rem] data-active:shadow-sm"
+                    className="h-9 flex-none rounded-full px-4 text-[0.82rem] data-active:shadow-sm"
                   >
                     {category.label}
                   </TabsTrigger>
@@ -76,8 +76,8 @@ export function Experience() {
                 <span
                   className={
                     item.current
-                      ? "absolute top-2 -left-[7px] size-3.5 rounded-full border-[3px] border-background bg-brand ring-4 ring-brand/15"
-                      : "absolute top-2 -left-[6px] size-3 rounded-full border-2 border-background bg-foreground/30"
+                      ? "absolute top-2 -left-1.75 size-3.5 rounded-full border-[3px] border-background bg-brand ring-4 ring-brand/15"
+                      : "absolute top-2 -left-1.5 size-3 rounded-full border-2 border-background bg-foreground/30"
                   }
                 />
 
