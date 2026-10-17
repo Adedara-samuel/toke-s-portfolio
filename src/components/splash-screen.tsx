@@ -127,7 +127,7 @@ export function SplashScreen() {
                 </svg>
                 <div className="absolute inset-[10px] overflow-hidden rounded-full bg-muted">
                   <Image
-                    src="/portrait.jpg"
+                    src="/adedoyin-hero.jpg"
                     alt=""
                     fill
                     priority
@@ -163,7 +163,7 @@ export function SplashScreen() {
                     animate={{ y: 0, opacity: 1, filter: "blur(0px)" }}
                     exit={reduceMotion ? { opacity: 0 } : { y: "-100%", opacity: 0, filter: "blur(6px)" }}
                     transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
-                    className="absolute inset-0 flex items-center justify-center font-heading text-[2.6rem] leading-[1.15] tracking-tight text-balance italic sm:text-7xl sm:leading-tight md:text-[5.25rem]"
+                    className="absolute inset-0 flex items-center justify-center font-heading text-[2.3rem] leading-[1.15] tracking-tight text-balance italic sm:text-7xl sm:leading-tight md:text-[5.25rem]"
                   >
                     {splashLines[lineIndex]}
                   </motion.p>

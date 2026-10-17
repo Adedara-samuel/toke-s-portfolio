@@ -71,7 +71,7 @@ export function Hero() {
         <Reveal delay={0.1} className="relative mx-auto w-full max-w-sm lg:max-w-none">
           <div className="relative aspect-4/5 overflow-hidden rounded-t-[999px] rounded-b-3xl border-8 border-card bg-muted shadow-[0_30px_80px_-30px_oklch(0.3_0.05_40/0.45)]">
             <Image
-              src="/portrait.jpg"
+              src="/adedoyin-hero.jpg"
               alt="Portrait of Adedoyin Favour Adebayo"
               fill
               priority
