@@ -106,7 +106,7 @@ export function About() {
             </p>
             <p>
               As Content Writing &amp; Marketing Head at AMCOMS, I led a team of content creators and
-              ran content and marketing campaigns across platforms. At Prowoss Picture Limited, I
+              ran content and marketing campaigns across platforms. At Prowess Picture Limited, I
               managed client relationships through CRM strategies and analysed customer data to
               tailor marketing campaigns.
             </p>

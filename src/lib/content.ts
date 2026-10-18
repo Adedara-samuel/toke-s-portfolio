@@ -101,7 +101,7 @@ export const experience: Experience[] = [
   },
   {
     role: "Customer Relationship Management Specialist",
-    organisation: "Prowoss Picture Limited",
+    organisation: "Prowess Picture Limited",
     location: "Nigeria",
     period: "Feb 2025 – May 2025",
     category: "marketing",
@@ -192,7 +192,7 @@ export const impact = [
   {
     value: "Research",
     label: "Used customer insights to tailor marketing campaigns",
-    source: "Prowoss Picture Limited",
+    source: "Prowess Picture Limited",
   },
   {
     value: "Radio",
